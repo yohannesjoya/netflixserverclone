@@ -6,7 +6,7 @@ const { json } = require("express");
 const server = express();
 
 const mysqlConnection = mysql.createConnection({
-  ost: "localhost",
+  host: "localhost",
   user: "jonetflix",
   password: "jonetflix",
   database: "netflixclone",
