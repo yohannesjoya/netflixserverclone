@@ -29,8 +29,8 @@ server.use(
 server.use(express.urlencoded({ extended: true }));
 server.use(express.json());
 
-server.get("/hey", (req, res) => {
-  res.send("welcome");
+server.get("/", (req, res) => {
+  res.end("<h1>welcome to Joyas netflix clone server</h1>");
 });
 
 server.get("/loginaccess", (req, res) => {
