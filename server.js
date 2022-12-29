@@ -5,12 +5,21 @@ const cors = require("cors");
 const { json } = require("express");
 const server = express();
 
+// const mysqlConnection = mysql.createConnection({
+//   host: "localhost",
+//   user: "jonetflix",
+//   password: "jonetflix",
+//   database: "netflixclone",
+// });
+
 const mysqlConnection = mysql.createConnection({
-  host: "localhost",
-  user: "jonetflix",
-  password: "jonetflix",
-  database: "netflixclone",
+  host: "sql6.freesqldatabase.com",
+  user: "sql6587110",
+  password: "RjevGyYW65",
+  database: "sql6587110",
+  port: 3306,
 });
+
 mysqlConnection.connect((err) => {
   if (err) {
     console.log("---------\nthere is mysql connection error\n-----------");
